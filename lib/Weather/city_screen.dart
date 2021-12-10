@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'constants.dart';
+
 
 class CityScreen extends StatefulWidget {
   @override
@@ -7,7 +9,8 @@ class CityScreen extends StatefulWidget {
 }
 
 class _CityScreenState extends State<CityScreen> {
-   late String cityName;
+  var cityName;
+
 
   @override
   Widget build(BuildContext context) {
@@ -31,12 +34,12 @@ class _CityScreenState extends State<CityScreen> {
                   },
                   child: Icon(
                     Icons.arrow_back_ios,
-                    size: 50.0,
+                    size: 30.0,
                   ),
                 ),
               ),
               Container(
-                padding: EdgeInsets.all(20.0),
+                padding: EdgeInsets.all(10.0),
                 child: TextField(
                   style: TextStyle(
                     color: Colors.black,
@@ -56,6 +59,27 @@ class _CityScreenState extends State<CityScreen> {
                   style: kButtonTextStyle,
                 ),
               ),
+              // Container(
+              //
+              //   padding: EdgeInsets.all(10.0),
+              //   child: TextField(
+              //     style: TextStyle(
+              //       color: Colors.black,
+              //     ),
+              //     decoration: klatitudeInputDecoration,
+              //   ),
+              // ),
+              // Container(
+              //
+              //   padding: EdgeInsets.all(10.0),
+              //   child: TextField(
+              //     style: TextStyle(
+              //       color: Colors.black,
+              //     ),
+              //     decoration: klongitudeInputDecoration,
+              //   ),
+              // ),
+
             ],
           ),
         ),
